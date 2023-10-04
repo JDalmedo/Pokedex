@@ -1,72 +1,67 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
 }
+
+body {
+    background: linear-gradient( rgb(246, 231, 137), rgb(255, 72, 0));
+}
+
 .App {
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    font-family: 'Pokemon Solid', sans-serif;
-}    
-   
+    font-family: "Pokemon Solid", sans-serif;                                           
+}
 .TitleSection {
-    background-image: url(bola.png);
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #e7e7e6;
-}
-
-.TitleSection h1 {
-    font-size: 100px;
-    color: #363801;
-    
+    margin: 16px;
+    gap: 20px;
 }
 .TitleSection input {
+    height: 30px;
     width: 200px;
-    height: 40px;
-    border-radius: 10px;
-    border: 2px solid #e42403;
-    font-size: 18px;
-    padding-left: 10px;
+    border-radius: 8px;
+    border: 3px solid rgb(95, 117, 5);
+    font-size: 20px;
+    font-weight: bold;
 }
-.TitleSection button {
-    width: 180px;
-    height: 40px;
-    margin: 40px;
-    border-radius: 10px;
-    font-size: 28px;
-    justify-content: center;
-    border: none;
-    color: #080808;
-    background-color: #e42403
-}
-.TitleSection button:hover {
+.TitleSection input:hover{
     cursor: pointer;
+}
+.TitleSection button{
+    text-align: none;
+    border: 3px solid rgb(95, 117, 5);
+    border-radius: 8px;
+    height: 30px;
+    width: 150px;
+    font-size: 15px;
+    font-weight: 1000;
+}
+.TitleSection button:hover{
+    cursor: wait;
+}
+.TitleSection h1{
+    font-size: 90px;
+    color: rgb(95, 117, 5);
 }
 .DisplaySection {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: inherit;
+    align-items: center;
+}
+.DisplaySection .poken{
+    height: 200px;
+    width: 200px;
 }
 .DisplaySection h1 {
-    font-size: 40px;
-    color:rgb(51, 8, 8);
+    font-size: 35px;
 }
-h3,h4 {
-    font-size: 20px;
-    color:rgb(0, 11, 8);
-    
-}   
-.poke {
+.pkn {
     display: flex;
-    margin-top: 50px;
-    padding-left: 600px;
-    
-}
-li {
-    list-style-type: none;
+    padding-bottom: 20px;
+    gap: 30px;
 }

@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+=======
+body {
+    margin-top: 0;
+    padding: 0;
+    background-color: #faf8f5;
+    
+>>>>>>> 70187a6e4932d6722627f9452d5e12d136eb7ab1
 }
 
 body {
@@ -15,11 +23,29 @@ body {
     font-family: "Pokemon Solid", sans-serif;                                           
 }
 .TitleSection {
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 16px;
     gap: 20px;
+=======
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e7e7e6;
+    
+}
+
+.TitleSection h1 {
+    font-size: 100px;
+    color: #363801;
+    
+>>>>>>> 70187a6e4932d6722627f9452d5e12d136eb7ab1
 }
 .TitleSection input {
     height: 30px;
@@ -29,7 +55,23 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
+<<<<<<< HEAD
 .TitleSection input:hover{
+=======
+.TitleSection button {
+    width: 180px;
+    height: 40px;
+    margin: 40px;
+    border-radius: 10px;
+    font-size: 28px;
+    justify-content: center;
+    border: none;
+    color: #080808;
+    background-color: #e42403;
+    
+}
+.TitleSection button:hover {
+>>>>>>> 70187a6e4932d6722627f9452d5e12d136eb7ab1
     cursor: pointer;
 }
 .TitleSection button{
@@ -57,7 +99,12 @@ body {
     height: 200px;
     width: 200px;
 }
+.DisplaySection .pokem {
+    height: 250px;
+    width: 250px;
+}
 .DisplaySection h1 {
+<<<<<<< HEAD
     font-size: 35px;
 }
 .pkn {
@@ -65,3 +112,20 @@ body {
     padding-bottom: 20px;
     gap: 30px;
 }
+=======
+    text-align: center;
+    font-size: 40px;
+    color:rgb(51, 8, 8);
+}
+.DisplaySection .stats {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+}
+h3,h4 {
+    font-size: 30px;
+    color:rgb(0, 11, 8);
+    
+}   
+
+>>>>>>> 70187a6e4932d6722627f9452d5e12d136eb7ab1

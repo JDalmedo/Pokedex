@@ -33,7 +33,7 @@ const App = () => {
           setPokemonName(event.target.value)}}
           value={pokemonName.toLowerCase()} placeholder='Busca tu pokémon'/>
            <div className="DisplaySection">
-             {pokemonName &&  <button onClick={searchPokemon}>Click</button>}
+             {pokemonName &&  <button className="click" onClick={searchPokemon}>Click</button>}
              {!pokemonChosen ? (
               <h1> Elige entre más 100 </h1>
               ) : (

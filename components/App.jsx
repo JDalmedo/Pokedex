@@ -33,28 +33,29 @@ const App = () => {
           setPokemonName(event.target.value)}}
           value={pokemonName.toLowerCase()}/>
            <div className="DisplaySection">
-             {pokemonName &&  <button onClick={searchPokemon}>Click</button>}
+             {pokemonName &&  <button className="click" onClick={searchPokemon}>Click</button>}
              {!pokemonChosen ? (
               <h1> Busca tu Pokémon </h1>
               ) : (
-                <ul>
-                   <li><h1>{pokemon.name}</h1></li>
-                   <li><img src={pokemon.image} alt={pokemon.name} /></li>
-                   <li><h3>Number: #{pokemon.number}</h3></li>
-                   <li><h3>Species: {pokemon.species}</h3></li>
-                   <li><h3>Type: {pokemon.type}</h3></li>
-                   <li><h4>Hp: {pokemon.hp}</h4></li>
-                   <li><h4>Attack: {pokemon.attack}</h4></li>
-                   <li><h4>Defense: {pokemon.defense}</h4></li>
-                   <li><h4>Speed: {pokemon.speed}</h4></li>
-                </ul>
+                
+                <>
+                   <h1>{pokemon.name}</h1>
+                   <img className="pokem" src={pokemon.image} alt={pokemon.name} />
+                   <div className="stats"> 
+                    <h3>Number: #{pokemon.number}</h3>
+                    <h3>Species: {pokemon.species}</h3>
+                    <h3>Type: {pokemon.type}</h3>
+                    <h4>Hp: {pokemon.hp}</h4>
+                    <h4>Attack: {pokemon.attack}</h4>
+                    <h4>Defense: {pokemon.defense}</h4>
+                    <h4>Speed: {pokemon.speed}</h4>
+                   </div>
+                </>
                  
               )}
             </div>
        </div>
-       <div className='poke'>
-          <img src="/pokemon-pokeball.gif" alt="pokeball"></img>
-       </div>  
+       
      </div>
   )
 }
